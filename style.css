@@ -14,6 +14,7 @@ p ,h1, h2, h3, h4, h5, h6,ul,li {
   margin: 0!important;
   border: 0!important;
   padding: 0!important;
+  cursor: default;
 }
 body {
   line-height: 1.7;
@@ -31,6 +32,12 @@ body {
   background-color: #3EACE7;
   color: white;
 }
+.blue {
+  background-color: #3EACE7;
+}
+.blue:hover{
+  background-color: #87C547;
+}
 .icon-img{
   width:30px;min-height:20px;border-radius:50%;border:1px solid #ededed;
   transition: all 300ms;
@@ -38,4 +45,30 @@ body {
 }
 .icon-img:hover{
   transform: scale(1.2);
+}
+
+.owl-carousel {
+  display: block;
+  padding: 0 8px;
+}
+
+.owl-carousel .course-details-link:not(:first-child) {
+  display: none;
+}
+
+.owl-carousel img {
+  width: 270px;
+}
+.carousel-item{
+  display:none;
+}
+
+.sticky-bar{
+  position: fixed!important;
+  z-index: 5;
+  background: white;
+  width: 100%;
+  top: 0!important;
+  transition: 500ms;
+  box-shadow: 1px -3px 16px -7px black;
 }

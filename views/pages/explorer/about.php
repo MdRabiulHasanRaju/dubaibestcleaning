@@ -7,6 +7,11 @@
     box-shadow: 1px 1px 44px -37px black;
     border-radius: 10px;
 }
+@media screen and (max-width:600px) {
+    .about-btn{
+        margin-bottom: 20px;
+    }
+    }
 </style>
 <section class="about-explorer">
     <div class="container">
@@ -29,7 +34,7 @@
 
                 </p>
                 <a href="tel:+971561004127">
-                    <button type="button" class="btn btn-success my-btn" style="display: flex;align-items:center;gap:7px;">Contact Us Now<i class="fa-solid fa-arrow-right"></i></button>
+                    <button type="button" class="btn btn-success about-btn my-btn" style="display: flex;align-items:center;gap:7px;">Contact Us Now<i class="fa-solid fa-arrow-right"></i></button>
                 </a>
             </div>
         </div>

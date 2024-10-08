@@ -12,12 +12,27 @@ include "views/inc/navbar.php";
 <?php
 include "views/pages/explorer/banner.php";
 include "views/pages/explorer/about.php";
+include "views/pages/explorer/services.php";
+include "views/pages/explorer/services-category.php";
+include "views/pages/explorer/google-review.php";
+include "views/pages/explorer/services-category-2.php";
+include "views/pages/explorer/faqs.php";
+include "views/pages/explorer/contact.php";
+include "views/pages/explorer/services-category-bottom.php";
 ?>
 
 <?php
 include "views/inc/footer.php";
 ?>
-
+<script src="<?= LINK; ?>public/jquery/jquery.js"></script>
+<script src="<?= LINK; ?>public/owl/owl.carousel.min.js"></script>
+<!-- <script src="<?//= LINK; ?>public/bootstrap/bootstrap.min.js"></script> -->
+<script src="<?= LINK; ?>public/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="<?= LINK; ?>public/WOW-master/dist/wow.min.js"></script>
+<script src="<?= LINK; ?>public/bootstrap/popper.min.js"></script>
+<script>
+  new WOW().init();
+</script>
 <script src="main.js"></script>
 </body>
 

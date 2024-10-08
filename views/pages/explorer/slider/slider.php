@@ -2,7 +2,7 @@
     .slider-swiper {
         padding: 30px 0px;
         /* background-color: #edebf2; */
-        box-shadow: 1px 1px 35px -28px black;
+        /* box-shadow: 1px 1px 35px -28px black; */
     }
 
     .swiper {

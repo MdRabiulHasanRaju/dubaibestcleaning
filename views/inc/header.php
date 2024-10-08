@@ -28,10 +28,28 @@ $format = new Format;
                                     }; ?>">
   <meta name="keywords" content="<?= $meta_keywords; ?>">
   <meta name="title" content="<?=$title;?>">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <title><?= $title; ?></title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/8a0fad0de8.js" crossorigin="anonymous"></script>
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/8a0fad0de8.js" crossorigin="anonymous"></script> -->
+
+
+
+  <link rel="stylesheet" href="<?= LINK; ?>public/fontAwesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="<?= LINK; ?>public/fontAwesome/css/all.min.css">
+
+  <link rel="stylesheet" href="<?= LINK; ?>public/bootstrap/bootstrap.min.css">
+
+  <link rel="stylesheet" href="<?= LINK; ?>public/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="<?= LINK; ?>public/owl/owl.theme.default.min.css">
+  <link rel="stylesheet" href="<?= LINK; ?>public/WOW-master/css/libs/animate.css" />
+
+
+
+
   <link rel="stylesheet" href="<?= LINK; ?>views/pages/explorer/slider/swiper.css">
   <script src="<?= LINK; ?>views/pages/explorer/slider/swiper.js"></script>
 
