@@ -1,0 +1,13 @@
+@media screen and (max-width:600px){
+    .my-topbar{
+        display: none;
+    }
+    .about-explorer>.container>.row{
+        flex-direction: column-reverse;
+    }
+    .about-explorer-img{
+        padding-top: 25px;
+        width: 100%;
+    }
+
+}

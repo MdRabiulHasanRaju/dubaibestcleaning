@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+p ,h1, h2, h3, h4, h5, h6,ul,li {
+  margin: 0!important;
+  border: 0!important;
+  padding: 0!important;
+}
+body {
+  line-height: 1.7;
+}
+.my-btn {
+  background-color: #87C547;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 15px;
+  font-weight: bold;
+}
+.my-btn:hover{
+  background-color: #3EACE7;
+  color: white;
+}
+.icon-img{
+  width:30px;min-height:20px;border-radius:50%;border:1px solid #ededed;
+  transition: all 300ms;
+  background: white;
+}
+.icon-img:hover{
+  transform: scale(1.2);
+}
