@@ -22,10 +22,8 @@
     }
 
     .swiper-slide>img {
-        /* width: 851px;
-        height: 315px; */
         width: 100%;
-        height: 100%;
+        min-height: 300px;
         border: 2px solid #f1f1f1;
         border-radius: 5px;
     }
@@ -51,7 +49,7 @@
 
         .swiper-slide>img {
             width: 100%;
-            height: 100%;
+            min-height: 200px;
         }
     }
 
@@ -66,7 +64,7 @@
 
         .swiper-slide>img {
             width: 100%;
-            height: 100%;
+            min-height: 160px;
         }
     }
 </style>
@@ -87,11 +85,11 @@
                 //     );
                 //     $i = 1;
                 //     while (mysqli_stmt_fetch($Stmt)) { ?>
-                        <!-- <div class="swiper-slide"><img src="<?= LINK; ?>public/images/<?= $image; ?>" alt="slide img" /></div> -->
-                        <div class="swiper-slide"><img src="<?= LINK; ?>public/images/Slider-Banner-9663931725206874.png" alt="slide img" /></div>
-                        <div class="swiper-slide"><img src="<?= LINK; ?>public/images/Slider-Banner-9663931725206874.png" alt="slide img" /></div>
-                        <div class="swiper-slide"><img src="<?= LINK; ?>public/images/Slider-Banner-9663931725206874.png" alt="slide img" /></div>
-                        <div class="swiper-slide"><img src="<?= LINK; ?>public/images/Slider-Banner-9663931725206874.png" alt="slide img" /></div>
+                        <!-- <div class="swiper-slide"><img src="<?//= LINK; ?>public/images/<?//= $image; ?>" alt="slide img" /></div> -->
+                        <div class="swiper-slide"><img src="<?= LINK; ?>public/images/Slider-Banner-1.jpg" alt="slide img" /></div>
+                        <div class="swiper-slide"><img src="<?= LINK; ?>public/images/Slider-Banner-2.jpg" alt="slide img" /></div>
+                        <div class="swiper-slide"><img src="<?= LINK; ?>public/images/Slider-Banner-3.jpg" alt="slide img" /></div>
+                        <div class="swiper-slide"><img src="<?= LINK; ?>public/images/Slider-Banner-4.jpg" alt="slide img" /></div>
                 <?php //}
                 //} ?>
             </div>

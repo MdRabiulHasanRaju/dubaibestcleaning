@@ -1,7 +1,7 @@
 <?php
-$title= "Dubai Best Cleaning";
-$meta_description = "$title - Dubai Best Cleaning provides the top-notch villa deep cleaning services all across Dubai. Our clients are 100% satisfied with our work. Call us now +971 4 568 9636";
-$meta_keywords = "$title, dubai clean, dubai best clean, dubai best cleaning, cleaning service in dubai, dubaibestcleaning, dubaicleaning, cleaningdubai, bestdubaicleaning, best dubai cleaning service, best dubai cleaning, dubai cleaning service, cleaning service";
+$title= "Best Deep Cleaning Services Company in Dubai - DubaiBestCleaning";
+$meta_description = "$title - Dubai Best Cleaning provides the top-notch villa deep cleaning services all across Dubai. Our clients are 100% satisfied with our work. Call us now +971 56 459 8416";
+$meta_keywords = "$title, dubai clean, dubai best clean, dubai best cleaning, cleaning service in dubai, dubaibestcleaning, dubaicleaning,best deep cleaning services in dubai, Top 10 cleaning comapany in dubai, deep cleaning services dubai,cheap cleaning services dubai, cleaningdubai, bestdubaicleaning, best dubai cleaning service, best dubai cleaning, dubai cleaning service, cleaning service";
 $header_active = "Home";
 ?>
 <?php

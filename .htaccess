@@ -8,9 +8,9 @@ RewriteRule ^home?$ index.php
 ExpiresActive On
 
 # Images
-# ExpiresByType image/jpeg "access plus 1 year"
-# ExpiresByType image/gif "access plus 1 year"
-# ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 minute"
+ExpiresByType image/gif "access plus 1 minute"
+ExpiresByType image/png "access plus 1 minute"
 # ExpiresByType image/webp "access plus 1 year"
 # ExpiresByType image/svg+xml "access plus 1 year"
 # ExpiresByType image/x-icon "access plus 1 year"
