@@ -36,8 +36,10 @@
     <div class="container">
         <div class="row col-md-12">
             <div class="col-md-6" style="display: flex;align-items: center;flex-direction: column;gap:7px;justify-content: center;text-align: left;">
-                <h1 style="color:white;font-weight:bold;">CLEANING SERVICES WE'RE OFFERING</h1>
-                <h6 style="color:white;">As a full-service cleaning company in Dubai, we are also offering specialized services for particular occasions. We offer post construction clean-up for newly established or renovated buildings. With our heavy duty equipment, we can tidy up the construction rubble quickly and efficiently.</h6>
+                <h1 style="color:white;font-weight:bold;">THE CLEANING SERVICES WE PROVIDE
+                </h1>
+                <h6 style="color:white;">In addition, we provide specialty services for specific events as a full-service cleaning company in Dubai. For recently built or remodeled buildings, we provide post-construction cleanup. Our powerful machinery allows us to swiftly and effectively clear away the construction debris.
+                </h6>
             </div>
             <div class="col-md-6" style="display: flex;align-items:center;justify-content:center;">
                 <div class="services-categroy-list">

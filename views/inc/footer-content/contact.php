@@ -28,21 +28,21 @@
             </div>
 
             <div class="col-md-6" style="display: flex;align-items: center;flex-direction: column;gap:7px;justify-content: center;text-align: center;">
-                <h1 class="contact-explorer-title" style="color:black;font-weight:bold;">BUSINESS DETAILS</h1>
+                <h1 class="contact-explorer-title" style="color:black;font-weight:bold;">BUSINESS INFORMATION</h1>
                 <p>
                     <b>Working Hours</b> <br>
                     8:00 am to 10:00 pm<br>
                     <b>Address</b><br>
-                    Office no 311, Diamond business Center 2 Arjan, Al Barsha South Dubai – UAE<br>
+                    <?= $contact_result['address']; ?><br>
                     <b>Call Us</b><br>
                 </p>
                 <div class="contact-explorer-num">
-                    <a href="tel:+971561004127">
-                        <button type="button" class="btn btn-success my-btn blue">+971 56 100 4127</button>
+                    <a href="tel:<?=$contact_number;?>">
+                        <button type="button" class="btn btn-success my-btn blue"><?= $contact_result['number']; ?></button>
                     </a>
-                    <a href="tel:+971561004127">
-                        <button type="button" class="btn btn-success my-btn">+971 56 100 4127</button>
-                    </a>
+                    <!-- <a href="tel:+971564598416">
+                        <button type="button" class="btn btn-success my-btn"><?//= $contact_result['number']; ?></button>
+                    </a> -->
                 </div>
             </div>
 

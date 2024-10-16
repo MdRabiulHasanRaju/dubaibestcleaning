@@ -1,8 +1,11 @@
 RewriteEngine ON
 
-ErrorDocument 404 /views/error/404.php
+ErrorDocument 404 /dubaibestcleaning/views/error/404.php
 
 RewriteRule ^home?$ index.php 
+RewriteRule ^contact?$ views/pages/contact/contact.php
+
+RewriteRule ^([_a-z0-9A-Z]+)/([_a-z0-9A-Z]+)?$ views/pages/service/service-details.php?category_name=$1&service_title=$2
 
 <IfModule mod_expires.c>
 ExpiresActive On

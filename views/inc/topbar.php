@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row col-md-12">
       <div style="display: flex;align-items:center" class="col-md-4">
-        <h6 style="color: white;">info@dubaibestcleaning.com
+        <h6 style="color: white;">info@neatandhealthycleaning.com
         </h6>
       </div>
       <div class="col-md-4" style="display:flex;align-items:center;justify-content: center;gap:7px">

@@ -8,9 +8,9 @@
     <div class="container">
         <div class="row col-md-12">
             <div class="col-md-6" style="display: flex;align-items: center;flex-direction: column;gap:7px;justify-content: center;text-align: center;">
-                <h1 style="color:white;font-weight:bold;">PROFESSIONAL DEEP CLEANING SERVICES</h1>
-                <h6 style="color:white;">Cleaning Services, AC Duct Cleaning, Painting Services</h6>
-                <a href="tel:+971561004127">
+                <h1 style="color:white;font-weight:bold;">ADVANCED DEEP CLEANING SERVICES</h1>
+                <h6 style="color:white;">Painting Services, Cleaning Services, and AC Duct Cleaning</h6>
+                <a href="https://api.whatsapp.com/send?phone=<?=$wp_api_number;?>">
                     <button type="button" class="btn btn-success my-btn" style="display: flex;align-items:center;gap:7px;">Book Now<i class="fa-solid fa-arrow-right"></i></button>
                 </a>
             </div>

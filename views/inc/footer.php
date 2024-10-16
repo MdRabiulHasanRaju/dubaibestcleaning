@@ -1,9 +1,13 @@
+<?php
+include "footer-content/contact.php";
+include "footer-content/services-category-bottom.php";
+?>
 <section style="">
 
 <div class="container">
 <footer style="text-align: center;">
     <div class="footer__copyright">
-        <small>Copyrights &copy; Dubai Best Cleaning || 2024</small> <br>
+        <small>Copyrights &copy; Neat and Healthy Cleaning || <?=date('Y');?></small> <br>
         <small>Developed By &copy;<a target="_blank" href="https://www.linkedin.com/in/mdrabiulhasanraju">Md Rabiul Hasan</a></small>
     </div>
 </footer>   

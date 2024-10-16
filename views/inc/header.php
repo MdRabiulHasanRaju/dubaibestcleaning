@@ -2,6 +2,7 @@
 header('Expires: ' . gmdate('D, d M Y H:i:s \G\M\T', time() + (60)));
 header("Cache-Control: no-cache,must-revalidate");
 header("Pragma: no-cache");
+header_remove('x-powered-by');
 
 if (!isset($connection)) {
   include $_SERVER['DOCUMENT_ROOT'] . "/dubaibestcleaning/lib/Database.php";
@@ -31,33 +32,32 @@ $format = new Format;
   <meta name="keywords" content="<?= $meta_keywords; ?>">
   <meta name="title" content="<?= $title; ?>">
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="creator" content="@Md Rabiul Hasan">
 
-  <meta property="og:site_name" content="DubaiBestCleaning - Deep Cleaning Services Dubai">
-  <meta property="og:title" content="Best Cleaning Services Company Dubai - Deep Cleaning Services" />
-  <meta property="og:image" content="<?= LINK; ?>public/images/ogImage.jpg" />
-  <meta data-n-head="ssr" data-hid="og:image:type" property="og:image:type" content="image/jpg">
+  <meta property="og:site_name" content="NeatandHealthyCleaning - Dubai's Finest Deep Cleaning Services Provider">
+  <meta property="og:title" content="Dubai's Top Cleaning Services Provider: Deep Cleaning Services" />
+  <meta property="og:image" content="<?=LINK;?>public/images/favicon/apple-touch-icon.png" />
+  <meta data-n-head="ssr" data-hid="og:image:type" property="og:image:type" content="image/png">
   <meta property="og:image:alt" content="post-construction-cleaning-services">
   <meta property="og:type" content="Website" />
-  <meta property="og:description" content="Are you looking for a cleaning company in Dubai? We provide the best cleaning services in Dubai, deep cleaning for residential &amp; commercial. Call now 0561004127" />
-  <meta property="og:url" content="https://dubaibestcleaning.com" />
-  <meta property="fb:app_id" content="" />
-  <meta property="fb:pages" content="">
+  <meta property="og:description" content="Are you trying to find a cleaning service in Dubai? Deep cleaning for home and business spaces is what we do best in Dubai. Call now +971 56 459 8416" />
+  <meta property="og:url" content="https://NeatandHealthyCleaning.com" />
 
 
-  <meta name="dc.title" content="Best Deep Cleaning Services Company in Dubai | DubaiBestCleaning">
-  <meta name="dc.description" content="Are you looking for a deep cleaning company in Dubai? We provide the best deep cleaning services in Dubai.">
-  <meta name="dc.relation" content="https://DubaiBestCleaning.com/">
-  <meta name="dc.source" content="https://DubaiBestCleaning.com/">
+  <meta name="dc.title" content="Dubai's Finest Deep Cleaning Services Provider - NeatandHealthyCleaning">
+  <meta name="dc.description" content="Are you trying to find a cleaning service in Dubai? Deep cleaning for home and business spaces is what we do best in Dubai.">
+  <meta name="dc.relation" content="https://NeatandHealthyCleaning.com/">
+  <meta name="dc.source" content="https://NeatandHealthyCleaning.com/">
   <meta name="dc.language" content="en_US">
-  <meta name="description" content="Are you looking for a deep cleaning company in Dubai? We provide the best deep cleaning services in Dubai.">
+  <meta name="description" content="Are you trying to find a cleaning service in Dubai? Deep cleaning for home and business spaces is what we do best in Dubai.">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@DubaiBestCleaning1">
-  <meta name="twitter:creator" content="@DubaiBestCleaning1">
-  <meta name="twitter:title" content="Best Cleaning Services Company Dubai - Deep Cleaning Services">
-  <meta name="twitter:description" content="Are you looking for a cleaning company in Dubai? We provide the best cleaning services in Dubai, deep cleaning for residential &amp; commercial. Call now 0561004127">
-  <meta name="twitter:image" content="<?= LINK; ?>public/images/ogImage.jpg">
+  <meta name="twitter:site" content="@NeatandHealthyCleaning1">
+  <meta name="twitter:creator" content="@NeatandHealthyCleaning1">
+  <meta name="twitter:title" content="Dubai's Top Cleaning Services Provider: Deep Cleaning Services">
+  <meta name="twitter:description" content="Are you trying to find a cleaning service in Dubai? Deep cleaning for home and business spaces is what we do best in Dubai. Call now +971 56 459 8416">
+  <meta name="twitter:image" content="<?=LINK;?>public/images/favicon/apple-touch-icon.png">
 
   <title><?= $title; ?></title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
