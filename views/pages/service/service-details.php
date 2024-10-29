@@ -56,13 +56,18 @@ $header_active = "Services";
     .services-image-div {
         padding: 20px 0 !important;
     }
+    @media screen and (max-width:600px) {
+        .service-details-row{
+            flex-direction: column-reverse;
+        }
+    }
 </style>
 <section class="service-details">
 
     <?php include "service-banner.php"; ?>
 
     <div style="padding:40px 0" class="container">
-        <div class="row col-md-12">
+        <div class="row col-md-12 service-details-row">
             <div class="col-md-4">
                 <?php include "service-category.php"; ?>
                 <br>
@@ -76,6 +81,8 @@ $header_active = "Services";
 </section>
 
 <?php
+include "../explorer/review.php";
+// include "../explorer/google-review.php";
 include "../../inc/footer.php";
 ?>
 <script src="<?= LINK; ?>public/jquery/jquery.js"></script>

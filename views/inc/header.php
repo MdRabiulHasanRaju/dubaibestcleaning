@@ -27,7 +27,7 @@ $format = new Format;
                                       header("location:" . LINK . "error/404?metaDataError");
                                     } else {
                                       echo $meta_description;
-                                    }; ?>">
+                                    }; ?>"> 
 
   <meta name="keywords" content="<?= $meta_keywords; ?>">
   <meta name="title" content="<?= $title; ?>">
@@ -43,8 +43,10 @@ $format = new Format;
   <meta property="og:description" content="Are you trying to find a cleaning service in Dubai? Deep cleaning for home and business spaces is what we do best in Dubai. Call now +971 56 459 8416" />
   <meta property="og:url" content="https://NeatandHealthyCleaning.com" />
 
+  <link rel="canonical" href="https://neatandhealthycleaning.com/" />
 
-  <meta name="dc.title" content="Dubai's Finest Deep Cleaning Services Provider - NeatandHealthyCleaning">
+
+  <!-- <meta name="dc.title" content="Dubai's Finest Deep Cleaning Services Provider - NeatandHealthyCleaning">
   <meta name="dc.description" content="Are you trying to find a cleaning service in Dubai? Deep cleaning for home and business spaces is what we do best in Dubai.">
   <meta name="dc.relation" content="https://NeatandHealthyCleaning.com/">
   <meta name="dc.source" content="https://NeatandHealthyCleaning.com/">
@@ -57,7 +59,7 @@ $format = new Format;
   <meta name="twitter:creator" content="@NeatandHealthyCleaning1">
   <meta name="twitter:title" content="Dubai's Top Cleaning Services Provider: Deep Cleaning Services">
   <meta name="twitter:description" content="Are you trying to find a cleaning service in Dubai? Deep cleaning for home and business spaces is what we do best in Dubai. Call now +971 56 459 8416">
-  <meta name="twitter:image" content="<?=LINK;?>public/images/favicon/apple-touch-icon.png">
+  <meta name="twitter:image" content="<?=LINK;?>public/images/favicon/apple-touch-icon.png"> -->
 
   <title><?= $title; ?></title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">

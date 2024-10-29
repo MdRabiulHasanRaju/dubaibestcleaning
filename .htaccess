@@ -2,10 +2,29 @@ RewriteEngine ON
 
 ErrorDocument 404 /dubaibestcleaning/views/error/404.php
 
+#for admin
+
+RewriteRule ^admin?$ admin/index.php
+RewriteRule ^admin/login?$ admin/views/pages/auth/auth.php
+RewriteRule ^admin/technical-services?$ admin/views/pages/technical-services/technical-services.php
+RewriteRule ^admin/cleaning-services?$ admin/views/pages/cleaning-services/cleaning-services.php
+RewriteRule ^admin/painting-services?$ admin/views/pages/painting-services/painting-services.php
+RewriteRule ^admin/edit-service/([0-9]+) admin/views/pages/edit-service/edit-service.php?id=$1
+RewriteRule ^admin/featured-services?$ admin/views/pages/featured-services/featured-services.php
+RewriteRule ^admin/add-service?$ admin/views/pages/add-service/add-service.php
+RewriteRule ^admin/contact?$ admin/views/pages/contact/contact.php
+#RewriteRule ^admin/paid-order?$ admin/views/pages/paid-order/paid-order.php
+
 RewriteRule ^home?$ index.php 
 RewriteRule ^contact?$ views/pages/contact/contact.php
+RewriteRule ^review?$ views/pages/review/review.php
 
-RewriteRule ^([_a-z0-9A-Z]+)/([_a-z0-9A-Z]+)?$ views/pages/service/service-details.php?category_name=$1&service_title=$2
+RewriteRule ^([a-z0-9A-Z_]+)/([a-z0-9A-Z_]+)$ views/pages/service/service-details.php?category_name=$1&service_title=$2
+
+
+
+
+
 
 <IfModule mod_expires.c>
 ExpiresActive On

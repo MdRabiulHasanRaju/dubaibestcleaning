@@ -3,7 +3,7 @@
     font-weight: bold;
     text-transform: uppercase;
     color: #3EACE7;
-    font-size: 0.8675rem;
+    font-size: 0.7675rem;
   }
 
   .active {
@@ -19,23 +19,38 @@
   }
 
   .dropdown-menu.show {
-    display: block;
-    width: 570px;
+    display: flex;
+    width: 950px;
+    flex-wrap: wrap;
+    left: -220%;
+    max-height: 400px;
   }
 
   .dropdown-menu.show>p {
-    display: inline-flex;
+    width: 310px;
+    display: inline-table;
+  }
+
+  @media screen and (max-width:1000px) {
+    .dropdown-menu.show {
+      width: 100%;
+      overflow: scroll;
+      height: 300px;
+    }
   }
 
   @media screen and (max-width:600px) {
     .dropdown-menu.show {
       width: 100%;
+      overflow: scroll;
+      height: 300px;
     }
 
     .dropdown-menu.show>p {
       display: block;
     }
-    .dropdown-item{
+
+    .dropdown-item {
       width: 100%;
     }
   }
@@ -51,7 +66,7 @@ $wp_api_number = str_replace("+", "", $contact_number);
   <div class="container">
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background: unset !important;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="<?=LINK;?>">
+        <a class="navbar-brand" href="<?= LINK; ?>">
           <img style="width: 90px;min-height:70px" src="<?= LINK; ?>public/images/logo-h.png" alt="Your Print Logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +76,7 @@ $wp_api_number = str_replace("+", "", $contact_number);
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="<?=LINK;?>">HOME</a>
+              <a class="nav-link active" aria-current="page" href="<?= LINK; ?>">HOME</a>
             </li>
 
             <?php
@@ -78,11 +93,11 @@ $wp_api_number = str_replace("+", "", $contact_number);
                   <div class="dropdown-menu">
                     <?php
                     while ($services_result = mysqli_fetch_assoc($services_stmt)) {
-                        $category_name_link = str_replace(" ", "_", $cat_result['name']);
-                        $services_link = str_replace(" ", "_", $services_result['title']);
-                      ?>
+                      $category_name_link = str_replace(" ", "_", $cat_result['name']);
+                      $services_link = str_replace(" ", "_", $services_result['title']);
+                    ?>
                       <p>
-                        <a style="color: #3EACE7;width:280px" class="dropdown-item" href="<?=LINK;?><?=$category_name_link;?>/<?=$services_link;?>">
+                        <a style="color: #3EACE7;" class="dropdown-item" href="<?= LINK; ?><?= $category_name_link; ?>/<?= $services_link; ?>">
                           <i class="fa-solid fa-magnifying-glass-arrow-right"></i>
                           <?= $services_result['title']; ?>
                         </a>
@@ -101,7 +116,7 @@ $wp_api_number = str_replace("+", "", $contact_number);
             </li>
 
           </ul>
-          <a href="https://api.whatsapp.com/send?phone=<?=$wp_api_number;?>">
+          <a href="https://api.whatsapp.com/send?phone=<?= $wp_api_number; ?>">
             <button style="font-size:15px;" type="button" class="btn btn-success my-btn">Contact: <?= $contact_result['number']; ?></button>
           </a>
         </div>

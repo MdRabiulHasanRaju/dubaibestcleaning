@@ -11,7 +11,11 @@
         font-weight: bold;
     }
 
-    @media screen and (max-width:600px) {}
+    @media screen and (max-width:600px) {
+        .service-contact{
+            display: none;
+        }
+    }
 </style>
 
 <section class="service-contact">

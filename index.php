@@ -14,7 +14,8 @@ include "views/pages/explorer/banner.php";
 include "views/pages/explorer/about.php";
 include "views/pages/explorer/services.php";
 include "views/pages/explorer/services-category.php";
-include "views/pages/explorer/google-review.php";
+include "views/pages/explorer/review.php";
+// include "views/pages/explorer/google-review.php";
 include "views/pages/explorer/services-category-2.php";
 include "views/pages/explorer/faqs.php";
 ?>
