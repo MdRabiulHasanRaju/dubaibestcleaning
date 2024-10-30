@@ -61,7 +61,7 @@
 
 
             <?php
-            $feature_services_sql = "select category_id,title,sub_title,featured_image from services where featured='1'";
+            $feature_services_sql = "select category_id,title,sub_title,featured_image from services where featured='1' order by id desc";
             $feature_services_stmt = mysqli_query($connection, $feature_services_sql);
             while ($featured_result = mysqli_fetch_assoc($feature_services_stmt)) {
 

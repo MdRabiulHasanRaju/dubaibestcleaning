@@ -73,25 +73,21 @@
         <div class="swiper">
             <div class="swiper-wrapper">
                 <?php
-                // $Sql = "select * from slider order by id desc";
-                // $Stmt = fetch_data($connection, $Sql);
-                // if (mysqli_stmt_num_rows($Stmt) == 0) {
-                //     $noOrder = "Empty Teacher";
-                // } else {
-                //     mysqli_stmt_bind_result(
-                //         $Stmt,
-                //         $id,
-                //         $image,
-                //     );
-                //     $i = 1;
-                //     while (mysqli_stmt_fetch($Stmt)) { ?>
-                        <!-- <div class="swiper-slide"><img src="<?//= LINK; ?>public/images/<?//= $image; ?>" alt="slide img" /></div> -->
-                        <div class="swiper-slide"><img src="<?= LINK; ?>public/images/Slider-Banner-1.jpg" alt="slide img" /></div>
-                        <div class="swiper-slide"><img src="<?= LINK; ?>public/images/Slider-Banner-2.jpg" alt="slide img" /></div>
-                        <div class="swiper-slide"><img src="<?= LINK; ?>public/images/Slider-Banner-3.jpg" alt="slide img" /></div>
-                        <div class="swiper-slide"><img src="<?= LINK; ?>public/images/Slider-Banner-4.jpg" alt="slide img" /></div>
-                <?php //}
-                //} ?>
+                $Sql = "select * from slider order by id desc";
+                $Stmt = fetch_data($connection, $Sql);
+                if (mysqli_stmt_num_rows($Stmt) == 0) {
+                    $noOrder = "Empty Slider";
+                } else {
+                    mysqli_stmt_bind_result(
+                        $Stmt,
+                        $id,
+                        $slider_image
+                    );
+                    $i = 1;
+                    while (mysqli_stmt_fetch($Stmt)) { ?>
+                         <div class="swiper-slide"><img src="<?= LINK; ?>public/images/<?= $slider_image; ?>" alt="slide img" /></div> 
+                <?php }
+                } ?>
             </div>
             <div class="swiper-pagination"></div>
             <!-- <div class="swiper-button-prev"></div>

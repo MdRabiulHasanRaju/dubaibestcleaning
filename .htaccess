@@ -13,6 +13,7 @@ RewriteRule ^admin/edit-service/([0-9]+) admin/views/pages/edit-service/edit-ser
 RewriteRule ^admin/featured-services?$ admin/views/pages/featured-services/featured-services.php
 RewriteRule ^admin/add-service?$ admin/views/pages/add-service/add-service.php
 RewriteRule ^admin/contact?$ admin/views/pages/contact/contact.php
+RewriteRule ^admin/slider?$ admin/views/pages/slider/slider.php
 #RewriteRule ^admin/paid-order?$ admin/views/pages/paid-order/paid-order.php
 
 RewriteRule ^home?$ index.php 

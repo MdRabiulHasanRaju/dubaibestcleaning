@@ -52,6 +52,9 @@ $header_active = "Services";
         padding-bottom: 10px !important;
         list-style: inside;
     }
+    .service-description ol li {
+        list-style: auto;
+    }
 
     .services-image-div {
         padding: 20px 0 !important;

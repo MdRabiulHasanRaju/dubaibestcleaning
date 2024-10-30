@@ -52,8 +52,6 @@
             border-radius: 10px;
         }
 
-
-
         .owl-carousel {
             display: block;
             padding: 0 8px;
@@ -104,7 +102,7 @@
                     <h2>Our Reviews</h2>
 
                     <div class="star-box">
-                        <span style="font-weight: bold;font-size:18px;"><?= round($average_review,2); ?> </span>
+                        <span style="font-weight: bold;font-size:18px;"><?= round($average_review, 2); ?> </span>
                         <?php
                         $nullaverage_review = 5 - $average_review;
                         for ($i = 1; $i <= floor($average_review); $i++) { ?>
@@ -139,7 +137,7 @@
 
                     <?php
                     mysqli_data_seek($review_stmt, 0); // clear fetch data
-                    $count=0;
+                    $count = 0;
                     while ($review_result = mysqli_fetch_assoc($review_stmt)) {
                     ?>
                         <div class="item">
@@ -164,11 +162,12 @@
                                     ?>
                                 </div>
                                 <div class="review-box-bottom">
-                                        <?= $review_result['comment']; ?>
+                                    <?= $review_result['comment']; ?>
                                 </div>
                             </div>
                         </div>
-                    <?php $count++; } ?>
+                    <?php $count++;
+                    } ?>
 
 
 

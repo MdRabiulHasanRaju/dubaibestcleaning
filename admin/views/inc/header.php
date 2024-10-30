@@ -114,6 +114,16 @@ $format = new Format;
           </li>
 
           <li class="sidebar-item <?php
+                                  if (isset($header_active) && $header_active == "Slider") {
+                                    echo 'myactive';
+                                  } ?>">
+            <a class="sidebar-link" href="<?= ADMIN_LINK; ?>slider">
+              <i class="align-middle" data-feather="sliders"></i>
+              <span class="align-middle">Slider</span>
+            </a>
+          </li>
+
+          <li class="sidebar-item <?php
                                   if (isset($header_active) && $header_active == "Contact") {
                                     echo 'myactive';
                                   } ?>">

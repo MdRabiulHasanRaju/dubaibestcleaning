@@ -72,3 +72,9 @@ body {
   transition: 500ms;
   box-shadow: 1px -3px 16px -7px black;
 }
+label {
+  font-weight: bold;
+}
+.form-group{
+  margin-bottom: 10px;
+}

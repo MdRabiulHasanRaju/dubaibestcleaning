@@ -23,6 +23,11 @@ else{
     header("location: ".LINK."error/404");
 }
 ?>
+<style>
+    .ck-editor__editable {
+    min-height: 300px;
+}
+</style>
 <div class="container-fluid p-0">
 
     <h1 class="h3 mb-3">Edit service</h1>
@@ -144,7 +149,7 @@ include("../../inc/footer.php");
 }
 ?>
 <script src="<?= ADMIN_LINK; ?>public/js/app.js"></script>
-<!-- <script type="importmap">
+<script type="importmap">
     {
         "imports": {
             "ckeditor5": "https://cdn.ckeditor.com/ckeditor5/43.2.0/ckeditor5.js",
@@ -177,7 +182,7 @@ include("../../inc/footer.php");
         } )
         .then( /* ... */ )
         .catch( /* ... */ );
-</script> -->
+</script> 
 </body>
 
 </html>
