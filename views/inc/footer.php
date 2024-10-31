@@ -1,8 +1,9 @@
 <?php
 include "footer-content/contact.php";
 include "footer-content/services-category-bottom.php";
+include "service-booking/service-booking.php";
 ?>
-<section style="">
+<section>
 
 <div class="container">
 <footer style="text-align: center;">

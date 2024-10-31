@@ -76,7 +76,10 @@ $wp_api_number = str_replace("+", "", $contact_number);
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="<?= LINK; ?>">HOME</a>
+              <a class="nav-link <?php
+                                  if (isset($header_active) && $header_active == "Home") {
+                                    echo 'active';
+                                  } ?>" aria-current="page" href="<?= LINK; ?>">HOME</a>
             </li>
 
             <?php
@@ -112,7 +115,10 @@ $wp_api_number = str_replace("+", "", $contact_number);
             ?>
 
             <li class="nav-item">
-              <a class="nav-link" href="<?=LINK;?>contact">Contact Us</a>
+              <a class="nav-link <?php
+                                  if (isset($header_active) && $header_active == "Contact") {
+                                    echo 'active';
+                                  } ?>" href="<?=LINK;?>contact">Contact Us</a>
             </li>
 
           </ul>
