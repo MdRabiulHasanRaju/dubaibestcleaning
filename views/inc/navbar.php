@@ -112,7 +112,7 @@ $wp_api_number = str_replace("+", "", $contact_number);
             ?>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="<?=LINK;?>contact">Contact Us</a>
             </li>
 
           </ul>
