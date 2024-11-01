@@ -1,4 +1,4 @@
-<?php
+<?php ob_start();
 $title= "Best Deep Cleaning Services Company in Dubai - NeatandHealthyCleaning";
 $meta_description = "$title - Neat and Healthy Cleaning provides the top-notch villa deep cleaning services all across Dubai. Our clients are 100% satisfied with our work. Call us now +971 56 459 8416";
 $meta_keywords = "$title, Neat and Healthy Cleaning, NeatandHealthyCleaning, Neat and Healthy,Neat Healthy Cleaning, cleaning service in dubai, NeatHealthyCleaning, NeatCleaning,best deep cleaning services in dubai, Top 10 cleaning comapany in dubai, deep cleaning services dubai,cheap cleaning services dubai, cleaningdubai, best dubai cleaning, best dubai cleaning service, best dubai cleaning, dubai cleaning service, cleaning service";
@@ -22,6 +22,7 @@ include "views/pages/explorer/faqs.php";
 
 <?php
 include "views/inc/footer.php";
+ob_end_flush();
 ?>
 <script src="<?= LINK; ?>public/owl/owl.carousel.min.js"></script>
 <!-- <script src="<?//= LINK; ?>public/bootstrap/bootstrap.min.js"></script> -->

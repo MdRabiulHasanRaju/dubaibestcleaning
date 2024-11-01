@@ -1,4 +1,15 @@
 <style>
+    section.service-booking {
+    background: gray;
+    width: 50%;
+    bottom: 0;
+    position: fixed;
+    right:0;
+    z-index: 9;
+}
+.service-booking img{
+width: 100%;
+}
     .booking-card {
         display: none;
         width: 400px;
@@ -10,7 +21,7 @@
     }
 
     .service-booking-icon {
-        width: 400px;
+        width: 50%;
         position: fixed;
         bottom: 2%;
         right: 9%;
@@ -59,12 +70,16 @@
         font-size: 16px;
         font-weight: bold;
     }
+    .mobile-service-booking{
+        display: none;
+    }
 
     @media screen and (max-width:768px) {
         .service-booking-icon {
-            bottom: 1%;
+            display: none;
+            /* bottom: 1%;
             right: 3%;
-            place-items: end;
+            place-items: end; */
 
         }
 
@@ -73,14 +88,18 @@
             right: 1%;
         }
 
-        .service-booking-icon img {
+        /* .service-booking-icon img {
             width: 60px !important;
             border: none;
             background: none;
-        }
+        } */
+        .mobile-service-booking{
+        display: block;
+    }
     }
 </style>
 <section class="service-booking">
+    <img class="mobile-service-booking" src="<?=LINK;?>public/images/icon/Book-Service.png" alt="whatsapp-text-icon">
     <div class="card card-body booking-card">
         <div class="text-end">
             <button type="button" class="btn-close service-close-btn" aria-label="Close"></button>
@@ -121,24 +140,44 @@
         <img class="icon-img" id="service-icon" src="<?= LINK; ?>public/images/icon/message.png" alt="service-booking-icon">
     </div>
 </section>
-
 <script>
+          if(window.innerWidth<768){
+            document.getElementsByClassName("service-booking-icon")[0].remove();
+          }
+</script>
+<script>
+    let mobileServiceOpen = document.getElementsByClassName("mobile-service-booking")[0];
     let serviceOpen = document.getElementById("service-icon");
     let serviceClose = document.getElementsByClassName("service-close-btn")[0];
 
     let serviceForm = document.getElementsByClassName("booking-card")[0];
     let serviceIcon = document.getElementsByClassName("service-booking-icon")[0];
 
-    serviceOpen.addEventListener("click", (e) => {
+    mobileServiceOpen.addEventListener("click", (e) => {
+        serviceForm.style.display = "block";
+    })
+
+    if(serviceOpen) serviceOpen.addEventListener("click", (e) => {
         serviceForm.style.display = "block";
         serviceIcon.style.display = "none";
     })
 
     serviceClose.addEventListener("click", (e) => {
         serviceForm.style.display = "none";
-        serviceIcon.style.display = "grid";
+        if(serviceIcon) serviceIcon.style.display = "grid";
     })
 </script>
+<?php
+if (!isset($_COOKIE['BookingNotice'])) {
+    setcookie("BookingNotice", "BookingNoticeOn", time() + 43200, "/");
+?>
+    <script>
+        setTimeout(() => {
+            serviceForm.style.display = "block";
+            serviceIcon.style.display = "none";
+        }, 4000)
+    </script>
+<?php } ?>
 <script>
     (function($) {
 

@@ -20,6 +20,7 @@ include "footer-content/services-category-bottom.php";
 <script src="<?= LINK; ?>public/jquery/jquery.validate.min.js"></script>
 <?php
 include "service-booking/service-booking.php";
+include "service-booking/mobile-whatsapp.php";
 ?>
 <script>
     if (window.history.replaceState) {
