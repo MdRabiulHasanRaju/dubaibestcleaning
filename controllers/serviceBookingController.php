@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $to = 'neatandhealthycleaning@gmail.com';
 
 function url(){
@@ -14,8 +14,8 @@ if($_POST) {
    $name = trim(stripslashes($_POST['name']));
    $email = trim(stripslashes($_POST['email']));
    $phone = trim(stripslashes($_POST['phone']));
-   $subject = trim(stripslashes($_POST['subject']));
-   $contact_message = trim(stripslashes($_POST['message']));
+   $subject = $name." Booked a Service";
+   $contact_message = $name." Booked a Service";
 
    
 	if ($subject == '') { $subject = "Contact Form Submission"; }
@@ -27,7 +27,7 @@ if($_POST) {
 	 $message .= "Phone Number: " . $phone . "<br />";
    $message .= "Message: <br />";
    $message .= nl2br($contact_message);
-   $message .= "<br /> ----- <br /> This email was sent from your site " . url() . " contact form. <br />";
+   $message .= "<br /> ----- <br /> This email was sent from your site " . url() . " Service Booked form. <br />";
 
    // Set From: header
    $from =  $name . " <" . $email . ">";

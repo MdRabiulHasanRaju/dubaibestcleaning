@@ -202,7 +202,6 @@ include "../explorer/review.php";
 // include "../explorer/google-review.php";
 include "../../inc/footer.php";
 ?>
-<script src="<?= LINK; ?>public/jquery/jquery.js"></script>
 <script src="<?= LINK; ?>public/owl/owl.carousel.min.js"></script>
 <!-- <script src="<? //= LINK; 
                     ?>public/bootstrap/bootstrap.min.js"></script> -->

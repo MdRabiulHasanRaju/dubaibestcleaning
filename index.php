@@ -23,7 +23,6 @@ include "views/pages/explorer/faqs.php";
 <?php
 include "views/inc/footer.php";
 ?>
-<script src="<?= LINK; ?>public/jquery/jquery.js"></script>
 <script src="<?= LINK; ?>public/owl/owl.carousel.min.js"></script>
 <!-- <script src="<?//= LINK; ?>public/bootstrap/bootstrap.min.js"></script> -->
 <script src="<?= LINK; ?>public/bootstrap/bootstrap.bundle.min.js"></script>
