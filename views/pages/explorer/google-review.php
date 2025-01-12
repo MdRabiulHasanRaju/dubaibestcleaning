@@ -10,7 +10,7 @@
             </div>
             <div class="col-12">
                 <script src="https://static.elfsight.com/platform/platform.js" async></script>
-                <div class="elfsight-app-52925873-21c7-4deb-9cfc-7844d2c1bd2a" data-elfsight-app-lazy></div>
+                <div class="elfsight-app-3e17eeea-d54e-4f66-aa19-6a343703ce85" data-elfsight-app-lazy></div>
                 <div style="text-align: center;">
                     <a href="#" class="btn btn-success my-btn">VIEW ALL</a>
                 </div>
