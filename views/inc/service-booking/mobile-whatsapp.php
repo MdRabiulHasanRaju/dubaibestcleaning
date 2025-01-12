@@ -1,7 +1,8 @@
 <style>
     section.whatsapp-booking {
         background: gray;
-        width: 50%;
+        display:flex;
+        width: 100%;
         bottom: 0;
         position: fixed;
         z-index: 8;
@@ -58,5 +59,11 @@
 <section class="whatsapp-booking">
     <a class="mobile-whatsapp-booking" href="https://api.whatsapp.com/send?phone=<?=$wp_api_number;?>">
         <img src="<?= LINK; ?>public/images/icon/whatsapp-text.jpg" alt="whatsapp-text-icon">
+    </a>
+    <a class="mobile-whatsapp-booking" href="tel:+<?=$wp_api_number;?>">
+        <img src="<?= LINK; ?>public/images/icon/call-now.png" alt="call-now-text-icon">
+    </a>
+        <a class="mobile-whatsapp-booking" href="javascript:void(Tawk_API.toggle())">
+        <img src="<?= LINK; ?>public/images/icon/live-chat.png" alt="live-chat-text-icon">
     </a>
 </section>

@@ -1,6 +1,7 @@
 <style>
     .services-category{
-        background:#3eace7c4;
+        /*background:#3eace7c4;*/
+        background:#0b4a6cc4;
         padding:80px 0;
     }
     @media screen and (max-width:600px) {

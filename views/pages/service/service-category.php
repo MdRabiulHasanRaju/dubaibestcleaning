@@ -2,12 +2,17 @@
     .service-category-name {
         padding: 15px !Important;
         text-align: center;
-        background: #6bbfed;
+        /*background: #6bbfed;*/
+        background:#0b4a6cc4;
         color: white;
         font-weight: bold;
     }
 
-    @media screen and (max-width:600px) {}
+    @media screen and (max-width:600px) {
+        .services-category-name{
+            font-size:16px;
+        }
+    }
 </style>
 <section class="service-category">
     <div class="card">
@@ -27,7 +32,7 @@
                 $services_link = str_replace(" ", "_", $service_cat_result['title']);
             ?>
                 <a href="<?=LINK;?><?=$category_name_link;?>/<?=$services_link;?>">
-                    <h5 style="cursor:pointer;font-weight: bold;color:<?= ($service_title == $service_cat_result['title'] ? 'orange' : 'black') ?>;padding:8px 0!important;"><?= $service_cat_result['title']; ?></h5>
+                    <h5 class="services-category-name" style="cursor:pointer;color:<?= ($service_title == $service_cat_result['title'] ? 'orange' : 'black') ?>;padding:8px 0!important;"><?= $service_cat_result['title']; ?></h5>
                 </a>
             <?php } ?>
         </div>

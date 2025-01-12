@@ -33,7 +33,8 @@ body {
   color: white;
 }
 .blue {
-  background-color: #3EACE7;
+  /*background-color: #3EACE7;*/
+  background:#0b4a6cc4;
 }
 .blue:hover{
   background-color: #87C547;

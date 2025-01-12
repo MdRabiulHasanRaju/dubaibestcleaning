@@ -1,6 +1,7 @@
 <style>
     .banner{
-        background:#3eace7c4;
+        /*background:#3eace7c4;*/
+        background:#0b4a6cc4;
         padding:50px 0;
     }
 </style>
@@ -13,9 +14,12 @@
                 <a href="https://api.whatsapp.com/send?phone=<?=$wp_api_number;?>">
                     <button type="button" class="btn btn-success my-btn" style="display: flex;align-items:center;gap:7px;">Book Now<i class="fa-solid fa-arrow-right"></i></button>
                 </a>
-                <a href="<?=LINK;?>review" class="btn btn-warning" style="width: 140px;">
-                        Review Us
-                </a>
+                <!--<a href="<?//=LINK;?>review" class="btn btn-warning" style="width: 140px;">-->
+                <!--        Review Us-->
+                <!--</a>-->
+                <!--<a href="#services-category" class="btn btn-warning" style="width: 140px;">-->
+                <!--        Review Us-->
+                <!--</a>-->
             </div>
             <div class="col-md-6">
                 <?php include "slider/slider.php"; ?>

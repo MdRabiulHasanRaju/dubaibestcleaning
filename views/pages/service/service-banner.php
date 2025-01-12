@@ -1,6 +1,7 @@
 <style>
     .banner {
-        background: #3eace7c4;
+        /*background: #3eace7c4;*/
+        background:#0b4a6cc4;
         padding: 50px 0;
     }
 

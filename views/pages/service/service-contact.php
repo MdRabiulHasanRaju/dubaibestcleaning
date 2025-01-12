@@ -6,7 +6,8 @@
     .service-contact-name {
         padding: 15px !Important;
         text-align: center;
-        background: #6bbfed;
+        /*background: #6bbfed;*/
+        background:#0b4a6cc4;
         color: white;
         font-weight: bold;
     }

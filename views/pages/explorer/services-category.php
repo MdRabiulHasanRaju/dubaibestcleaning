@@ -1,6 +1,7 @@
 <style>
     .services-category {
-        background: #3eace7c4;
+        /*background: #3eace7c4;*/
+        background:#0b4a6cc4;
         padding: 80px 0;
     }
 
@@ -41,7 +42,7 @@
                 <h6 style="color:white;">In addition, we provide specialty services for specific events as a full-service cleaning company in Dubai. For recently built or remodeled buildings, we provide post-construction cleanup. Our powerful machinery allows us to swiftly and effectively clear away the construction debris.
                 </h6>
             </div>
-            <div class="col-md-6" style="display: flex;align-items:center;justify-content:center;">
+            <div id="services-category" class="col-md-6" style="display: flex;align-items:center;justify-content:center;">
                 <div class="services-categroy-list">
                     <ul>
                         <li><img class="icon-img" src="<?= LINK; ?>public/images/icon/villa.png" alt="icon-img"> Villas</li>

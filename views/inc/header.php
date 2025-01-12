@@ -33,6 +33,7 @@ $format = new Format;
   <meta name="title" content="<?= $title; ?>">
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="creator" content="@Md Rabiul Hasan">
+  <meta name="robots" content="index, follow">
 
   <meta property="og:site_name" content="NeatandHealthyCleaning - Dubai's Finest Deep Cleaning Services Provider">
   <meta property="og:title" content="Dubai's Top Cleaning Services Provider: Deep Cleaning Services" />
