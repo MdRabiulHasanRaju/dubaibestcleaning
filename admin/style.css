@@ -50,13 +50,11 @@ form.search-form>input {
 }
 .myactive {
   background: #dc555b;
-  padding: 8px;
 }
 
 li.myactive > a {
   color: white;
   background: #dc555b;
-  font-weight: bold;
 }
 
 .my-btn {

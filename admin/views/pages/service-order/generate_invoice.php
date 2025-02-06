@@ -34,6 +34,7 @@ $orders = [];
 $totalAmount = 0;
 $totalTax = 0;
 $totalDiscount = 0;
+$subtTotalAmount =0;
 
 while ($row = $resultOrders->fetch_assoc()) {
     $orders[] = $row;

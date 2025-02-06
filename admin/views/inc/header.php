@@ -54,8 +54,8 @@ $format = new Format;
                                     echo 'myactive';
                                   } ?>">
             <a class="sidebar-link" href="<?= ADMIN_LINK; ?>add-order">
-              <i class="align-middle" data-feather="sliders"></i>
-              <span class="align-middle">New Order</span>
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="align-middle">Make Order</span>
             </a>
           </li>
 
@@ -64,7 +64,7 @@ $format = new Format;
                                     echo 'myactive';
                                   } ?>">
             <a class="sidebar-link" href="<?= ADMIN_LINK; ?>order-list">
-              <i class="align-middle" data-feather="sliders"></i>
+              <i class="fa-solid fa-money-bill"></i>
               <span class="align-middle">Order List</span>
             </a>
           </li>
@@ -78,7 +78,7 @@ $format = new Format;
                                     echo 'myactive';
                                   } ?>">
             <a class="sidebar-link" href="<?= ADMIN_LINK; ?>">
-              <i class="align-middle" data-feather="sliders"></i>
+            <i class="fa-solid fa-bath"></i>
               <span class="align-middle">Deep Cleaning</span>
             </a>
           </li>
@@ -88,7 +88,7 @@ $format = new Format;
                                     echo 'myactive';
                                   } ?>">
             <a class="sidebar-link" href="<?= ADMIN_LINK; ?>cleaning-services">
-              <i class="align-middle" data-feather="sliders"></i>
+            <i class="fa-solid fa-soap"></i>
               <span class="align-middle">Cleaning Services</span>
             </a>
           </li>
@@ -98,7 +98,7 @@ $format = new Format;
                                     echo 'myactive';
                                   } ?>">
             <a class="sidebar-link" href="<?= ADMIN_LINK; ?>technical-services">
-              <i class="align-middle" data-feather="sliders"></i>
+              <i class="fa-solid fa-solar-panel"></i>
               <span class="align-middle">Technical Services</span>
             </a>
           </li>
@@ -108,7 +108,7 @@ $format = new Format;
                                     echo 'myactive';
                                   } ?>">
             <a class="sidebar-link" href="<?= ADMIN_LINK; ?>painting-services">
-              <i class="align-middle" data-feather="sliders"></i>
+            <i class="fa-solid fa-broom"></i>
               <span class="align-middle">Painting Services</span>
             </a>
           </li>
@@ -118,7 +118,7 @@ $format = new Format;
                                     echo 'myactive';
                                   } ?>">
             <a class="sidebar-link" href="<?= ADMIN_LINK; ?>add-service">
-              <i class="align-middle" data-feather="sliders"></i>
+            <i class="fa-solid fa-folder-plus"></i>
               <span class="align-middle">Add New Service</span>
             </a>
           </li>

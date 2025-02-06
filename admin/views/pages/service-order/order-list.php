@@ -27,9 +27,13 @@ $resultInvoices = $connection->query($sqlInvoices);
 
 </div> -->
 
-<div class="container mt-5">
-    <h2 class="mb-4">Order List</h2>
-    <table class="table table-bordered table-striped">
+<div style="overflow: auto;" class="container mt-5">
+    <div class="d-flex mb-4" style="justify-content:space-between">
+        <h2>Order List</h2>
+        <a href="<?= ADMIN_LINK; ?>add-order" class="btn btn-success"><i class="fa-solid fa-cart-shopping"></i> Make Order</a>
+    </div>
+
+    <table class="table table-responsive table-bordered table-striped">
         <thead class="table-success">
             <tr>
                 <th>#</th>

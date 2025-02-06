@@ -70,6 +70,7 @@
             $taxAmount = ($total * $order['tax_rate']) / 100;
             $totalTax += $taxAmount;
             $totalDiscount += $order['discount'];
+            $subtTotalAmount += $total;
             $totalAmount += ($total + $taxAmount - $order['discount']);
         ?>
             <tr>
@@ -82,7 +83,7 @@
         <?php } ?>
         <tr>
             <td colspan="4" class="total">Amount:</td>
-            <td><?= number_format($totalAmount, 2); ?></td>
+            <td><?= number_format($subtTotalAmount, 2); ?></td>
         </tr>
         <tr>
             <td colspan="4" class="total">Tax Amount:</td>
