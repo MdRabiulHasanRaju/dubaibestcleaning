@@ -45,6 +45,30 @@ $format = new Format;
         </a>
 
         <ul class="sidebar-nav">
+        <li class="sidebar-header">
+            Order Management
+          </li>
+
+          <li class="sidebar-item <?php
+                                  if (isset($header_active) && $header_active == "New Order") {
+                                    echo 'myactive';
+                                  } ?>">
+            <a class="sidebar-link" href="<?= ADMIN_LINK; ?>add-order">
+              <i class="align-middle" data-feather="sliders"></i>
+              <span class="align-middle">New Order</span>
+            </a>
+          </li>
+
+          <li class="sidebar-item <?php
+                                  if (isset($header_active) && $header_active == "Order List") {
+                                    echo 'myactive';
+                                  } ?>">
+            <a class="sidebar-link" href="<?= ADMIN_LINK; ?>order-list">
+              <i class="align-middle" data-feather="sliders"></i>
+              <span class="align-middle">Order List</span>
+            </a>
+          </li>
+
           <li class="sidebar-header">
             Manage - Services
           </li>
@@ -133,7 +157,7 @@ $format = new Format;
             </a>
           </li>
 
-          
+
 
           <?php
           $admin_id = $_SESSION['admin_id'];

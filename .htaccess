@@ -14,7 +14,9 @@ RewriteRule ^admin/featured-services?$ admin/views/pages/featured-services/featu
 RewriteRule ^admin/add-service?$ admin/views/pages/add-service/add-service.php
 RewriteRule ^admin/contact?$ admin/views/pages/contact/contact.php
 RewriteRule ^admin/slider?$ admin/views/pages/slider/slider.php
-#RewriteRule ^admin/paid-order?$ admin/views/pages/paid-order/paid-order.php
+RewriteRule ^admin/add-order?$ admin/views/pages/service-order/add-order.php
+RewriteRule ^admin/order-list?$ admin/views/pages/service-order/order-list.php
+RewriteRule ^admin/invoice?$ admin/views/pages/service-order/generate_invoice.php
 
 RewriteRule ^home?$ index.php 
 RewriteRule ^contact?$ views/pages/contact/contact.php

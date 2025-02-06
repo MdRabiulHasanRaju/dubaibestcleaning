@@ -7,4 +7,4 @@ Disallow: /utility/
 Disallow: /views/
 Allow: /
 
-Sitemap: https://neatandhealthycleaning.com/sitemaps.xml
+Sitemap: https://neatandhealthycleaning.com/sitemap.xml
